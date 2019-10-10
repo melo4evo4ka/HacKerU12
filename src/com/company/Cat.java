@@ -23,8 +23,18 @@ public class Cat {
         this.height = height;
     }
 
+
+
     public void eat()
     {
         System.out.println("eating---------");
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
     }
 }
