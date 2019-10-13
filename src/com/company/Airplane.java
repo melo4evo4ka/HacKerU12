@@ -36,22 +36,31 @@ public class Airplane {
         this.fightRange = fightRange;
         this.company = company;
     }
-
+/*
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Airplane)) return false;
-        Airplane airplane = (Airplane) o;
+    public boolean equals(Object obj) {
+        Airplane airplane;
+        if (obj instanceof Airplane)
+        { airplane = (Airplane) obj;
         return seatingCatacity == airplane.seatingCatacity &&
                 fightRange == airplane.fightRange;
-
-    }
-
-  /*  @Override
-    public int hashCode() {
-        return Objects.hash(seatingCatacity, fightRange, company);
+        return super.equals(obj);
     }
 */
+        @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (!(o instanceof Airplane)) return false;
+                Airplane airplane = (Airplane) o;
+                return seatingCatacity == airplane.seatingCatacity &&
+                        fightRange == airplane.fightRange;
+            }
+/*
+          /*  @Override
+            public int hashCode() {
+                return Objects.hash(seatingCatacity, fightRange, company);
+            }
+        */
     public static void main(String[] args) {
         Airplane S7 = new Airplane(100, 2003,"S7");
         Airplane UralAirlaines = new Airplane(100, 2003, "UralAirlines");
