@@ -22,6 +22,7 @@ public class House {
         this.height = height*100;
     }
 
+    // TODO метод не учитывает поле COLOR
     public static int coast(int height)
     {
         //рассчтитать стоимость дома по пораметрам COLOR  и height
