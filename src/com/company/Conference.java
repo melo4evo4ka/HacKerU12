@@ -28,15 +28,13 @@ public class Conference {
         return CONST_CONFERENCE;
     }
 
-
-
     public static void main(String[] args) {
         Conference.period=10;
         showPeriod();
         Conference medicalConference = new Conference();
-        medicalConference.topic="dfdsfsdfsfsd";
+        medicalConference.topic="MedConfer";
         medicalConference.showTopic();
-        Conference itConference = new Conference();
+        Conference itConference = new Conference("itConference");
         itConference();
         itConference.showTopic();
 
