@@ -50,15 +50,15 @@ public class Airplane {
                 Airplane airplane = (Airplane) o;
                 int r = abs(seatingCatacity - airplane.seatingCatacity);
                 int v = abs(fightRange - airplane.fightRange) ;
-                    if ((r < 10) && ( v < 20)) {
+                    if ((r < 10) && (v < 20)) {
                         return true;
                     }  else return false;
         }
 
 
     public static void main(String[] args) {
-        Airplane S7 = new Airplane(110, 2003,"S7");
-        Airplane UralAirlaines = new Airplane(105, 2005, "UralAirlines");
+        Airplane S7 = new Airplane(110, 2005,"S7");
+        Airplane UralAirlaines = new Airplane(110, 2005, "UralAirlines");
         System.out.println(S7.equals(UralAirlaines));
     }
 }
