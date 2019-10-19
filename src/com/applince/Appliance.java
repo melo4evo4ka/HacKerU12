@@ -19,7 +19,8 @@ public class Appliance {
         Appliance[] appliances = {kette,dishwasher};
 
         for(Appliance a: appliances)
-        {
+        {   
+            kette.fillWithWater();
             a.doWork();
             a.switchOff();
         }
