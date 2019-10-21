@@ -2,7 +2,7 @@ package com.privat;
 
 public class Main {
     public static void main(String[] args) {
-        TireFitting.makeService();
-
+        TireFitting tireFitting = new TireFitting();
+        tireFitting.makeService();
     }
 }

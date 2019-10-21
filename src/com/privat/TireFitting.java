@@ -1,23 +1,40 @@
 package com.privat;
 
 public class TireFitting {
-private void removeTheWheel()
+private  void removeTheWheel()
 {
-
+    System.out.println("removeTheWheel");
 }
-    private static void fixWheel() {
+    private  void fixWheel() {
         System.out.println("fixWheel");
     }
-    private static void checkQuality() {
+    private boolean checkQuality() {
+        boolean qualityRes;
+        double b = Math.random();
+    b = Math.round(b);
+    if ( b == 1)
+    {
         System.out.println("checkQuality");
+        qualityRes = true;
     }
-    private static void installWheel(){
-        System.out.println("checkQuality");
+    else  qualityRes = false;
+    return qualityRes;
     }
-    public static void makeService(){
-        System.out.println("Все этапы замены колеса");
+    private void installWheel(){
+        System.out.println("installWheel");
+    }
+    public void makeService() {
+        //System.out.println("Все этапы замены колеса");
+        removeTheWheel();
+        fixWheel();
+        boolean qualityRes = checkQuality();
+        while (!qualityRes) {
+            removeTheWheel();
+            fixWheel();
+            qualityRes = checkQuality();
+        }
         installWheel();
-        checkQuality();
-    }
+        System.out.println("Все четыре этапа замены колеса пройдены.");
 
+    }
 }
