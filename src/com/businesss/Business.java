@@ -1,18 +1,39 @@
 package com.businesss;
 
-public class Business {
+public class Business implements Photostudio,KeyCutting {
+    private String phStudioName;
 
-    public void addToYandexMap(){
-        System.out.println("addToYandexMap");
+    public Business(String phStudioName) {
+        this.phStudioName = phStudioName;
     }
-    public void getLicence(){
-        System.out.println("getLicence");
-    }
-    public void makeSignboard(){
+
+    @Override
+    public void makeSignboard() {
         System.out.println("makeSignboard");
     }
-    public void KeyCutting(){
-        System.out.println("KeyCutting");
+
+    @Override
+    public String toString() {
+        return "Бизнес {" +
+                "Фотостудия ='" + phStudioName + '\'' +
+                '}';
     }
 
+    @Override
+    public void getLicence() {
+        System.out.println("getLicence");
+    }
+
+    @Override
+    public void addToYandexMap(Photostudio photostudio) {
+        System.out.println("addToYandexMap");
+        Yandex.addNewPhotoStudio(photostudio);
+    }
+
+    @Override
+    public void findKeyMaster() {
+        System.out.println("findKeyMaster");
+    }
 }
+
+
