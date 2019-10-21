@@ -15,19 +15,12 @@ public class Main {
                 System.out.println("turnOFF");
             }
         };
-        Appliance[] appliances = {kette,dishwasher,toster};
 
+        Appliance[] appliances = {kette,dishwasher,toster};
         for(Appliance a: appliances)
         {
             a.doWork();
             a.switchOff();
         }
-
-      /*  for (int i = 0;i < appliances.length; i++)
-        {
-        appliances[i].doWork();
-        appliances[i].switchOff();
-        }
-        */
-    }
+     }
 }
