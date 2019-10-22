@@ -11,9 +11,8 @@ abstract void paint();
     }
 }
 */
-public interface ColorFigure extends Figure
+interface ColorFigure extends Figure
 {
     default void paint() {
-
     }
 }

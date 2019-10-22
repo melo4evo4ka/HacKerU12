@@ -5,7 +5,7 @@ public abstract class Figure {
     abstract void draw();
     }
 */
-public interface Figure
+interface Figure
 {
 void draw();
 }

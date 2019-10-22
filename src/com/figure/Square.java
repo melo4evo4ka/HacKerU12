@@ -10,13 +10,9 @@ public class Square extends FlatFigure {
 */
 
 public class Square implements FlatFigure{
-    @Override
-    public void flatten() {
-        System.out.println("flatten");
-    }
 
     @Override
-    public void draw() {
-        System.out.println("draw");
+    public void flatten() {System.out.println("flatten");
+
     }
 }

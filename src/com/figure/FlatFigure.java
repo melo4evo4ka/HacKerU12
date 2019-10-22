@@ -11,9 +11,11 @@ public abstract class FlatFigure extends Figure {
 }
 */
 
-public interface FlatFigure extends Figure{
-void flatten();
+interface FlatFigure extends Figure {
+    void flatten();
 
     @Override
-    void draw();
+    default void draw() {
+        System.out.println("FlatFigure draw");
+    }
 }
